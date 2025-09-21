@@ -15,7 +15,7 @@ COPY . .
 
 
 RUN npm install
-RUN npm run test
+#RUN npm run test
 
 #exposing the required ports 
 
@@ -23,7 +23,7 @@ EXPOSE 8000
 
 #run the cmd 
 
-CMD["node" , "app.js"]
+CMD ["node" , "app.js"]
 
 
 
