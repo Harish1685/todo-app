@@ -1,0 +1,23 @@
+kind: DaemonSet
+apiVersion: apps/v1
+
+metadata:
+  name: dmn-todo
+  namespace: todo-app
+
+spec:
+  selector:
+    matchLabels:
+      app: my-todo
+
+  template:
+    metadata:
+      labels:
+       app: my-todo
+
+    spec:
+     containers:
+     - name: my-todo
+       image: zorochan/node-app
+       ports:
+       - containerPort: 8000    
