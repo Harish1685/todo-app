@@ -8,7 +8,7 @@ This repository contains a simple **Notes application** along with Kubernetes de
  **Deployment** → Manages the Notes app Pods.
  **Service** → Exposes the Notes app inside the cluster.
  **DaemonSet** → Ensures a Pod is running on every node (useful for logging/monitoring agents or node-level tasks).
-
+ **Job** → Runs a Pod to completion (useful for one-time tasks like migrations or batch jobs).
 
 ## How to Apply
 
@@ -17,3 +17,4 @@ kubectl apply -f namespace.yml
 kubectl apply -f deployment.yml
 kubectl apply -f service.yml
 kubectl apply -f daemonset.yml
+kubectl apply -f job.yml
