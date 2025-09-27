@@ -4,11 +4,12 @@ This repository contains a simple **Notes application** along with Kubernetes de
 
 ## Kubernetes Manifests Included
 
- **Namespace** → For isolating the app’s resources.
- **Deployment** → Manages the Notes app Pods.
- **Service** → Exposes the Notes app inside the cluster.
- **DaemonSet** → Ensures a Pod is running on every node (useful for logging/monitoring agents or node-level tasks).
- **Job** → Runs a Pod to completion (useful for one-time tasks like migrations or batch jobs).
+- **Namespace** → For isolating the app’s resources.  
+- **Deployment** → Manages the Notes app Pods.  
+- **Service** → Exposes the Notes app inside the cluster.  
+- **DaemonSet** → Ensures a Pod is running on every node (useful for logging/monitoring agents or node-level tasks).  
+- **Job** → Runs a Pod to completion (useful for one-time tasks like migrations or batch jobs).  
+
 
 ## How to Apply
 
