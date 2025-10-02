@@ -1,0 +1,22 @@
+kind: CronJob
+apiVersion: batch/v1
+
+metadata:
+  name: todo-cronjob
+  namespace: todo-app
+
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          name: cron-tab
+
+        spec:
+          containers:
+          - name: cron-tab
+            image: busybox
+            command: [ "echo" , "hello from cronjob"]
+          restartPolicy: Never     
+
